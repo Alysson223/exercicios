@@ -4,7 +4,10 @@ while True:
     nota = float(input("Digite a nota do aluno (digite -1 para encerrar): "))
     if nota == -1:
         break
-    notas.append(nota)
+    elif 0 <= nota <=10:
+        notas.append(nota)
+    else:
+        print(f'O valor {nota} é invalido.')
 
 for x in notas:
     soma += x
